@@ -9,6 +9,8 @@ body {
     line-height: 1.6;
     background-color: #f7f7f7;
     color: #333;
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -56,7 +58,8 @@ nav ul li a {
 }
 
 .image img {
-    width: 100%; /* Make the image fill the entire container width */
+    width: 80%; /* Make the image fill the entire container width */
+    max-width: 100%;
     height: auto; /* Maintain the aspect ratio */
 }
 
