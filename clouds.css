@@ -1,3 +1,7 @@
+.container {
+    position: relative; /* Ensure the container is positioned relatively */
+}
+
 .clouds {
     position: absolute;
     top: 50%; /* Adjust vertically to position clouds around the photo */
@@ -7,25 +11,40 @@
 
 .cloud {
     position: absolute;
-    width: 100px; /* Adjust width of the cloud */
-    height: 50px; /* Adjust height of the cloud */
-    background-color: #fff; /* Color of the cloud */
-    border-radius: 50px; /* Adjust border-radius to make the cloud rounder */
+    opacity: 0.7; /* Adjust opacity to make clouds translucent */
     animation-duration: 10s; /* Adjust animation duration as needed */
     animation-timing-function: linear; /* Adjust animation timing function as needed */
     animation-iteration-count: infinite;
 }
 
 .cloud1 {
-    top: -50px; /* Adjust top position of first cloud */
+    width: 120px; /* Adjust width of the cloud */
+    height: 80px; /* Adjust height of the cloud */
+    background-color: #fff; /* Color of the cloud */
+    border-radius: 50px; /* Adjust border-radius to make the cloud rounder */
+    top: -20px; /* Adjust top position of first cloud */
     left: 100px; /* Adjust left position of first cloud */
     animation-name: cloudMovement1; /* Specify animation for first cloud */
 }
 
 .cloud2 {
-    top: 100px; /* Adjust top position of second cloud */
+    width: 100px; /* Adjust width of the cloud */
+    height: 60px; /* Adjust height of the cloud */
+    background-color: #fff; /* Color of the cloud */
+    border-radius: 30px; /* Adjust border-radius to make the cloud rounder */
+    top: 50px; /* Adjust top position of second cloud */
     left: -50px; /* Adjust left position of second cloud */
     animation-name: cloudMovement2; /* Specify animation for second cloud */
+}
+
+.cloud3 {
+    width: 150px; /* Adjust width of the cloud */
+    height: 100px; /* Adjust height of the cloud */
+    background-color: #fff; /* Color of the cloud */
+    border-radius: 75px; /* Adjust border-radius to make the cloud rounder */
+    top: 100px; /* Adjust top position of third cloud */
+    left: 200px; /* Adjust left position of third cloud */
+    animation-name: cloudMovement3; /* Specify animation for third cloud */
 }
 
 @keyframes cloudMovement1 {
@@ -33,7 +52,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(300px); /* Adjust distance the cloud travels horizontally */
+        transform: translateX(200px); /* Adjust distance the cloud travels horizontally */
     }
 }
 
@@ -42,6 +61,15 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-200px); /* Adjust distance the cloud travels horizontally */
+        transform: translateX(-150px); /* Adjust distance the cloud travels horizontally */
+    }
+}
+
+@keyframes cloudMovement3 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(250px); /* Adjust distance the cloud travels horizontally */
     }
 }
