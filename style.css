@@ -66,4 +66,5 @@ nav ul li a {
 .text {
     flex: 2; /* Occupy two-thirds of the container */
     padding-left: 20px; /* Add spacing between image and text */
+    size: 40;
 }
