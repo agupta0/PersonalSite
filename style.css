@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #F9E7D1, #F8CEEC); /* Sunset gradient with pinky purple hues */
+    background: linear-gradient(to bottom, #F8CEEC, #F9E7D1); /* Sunset gradient with pinky purple hues */
     color: #333;
     width: 100%;
     height: 100%;
@@ -43,7 +43,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Arial', sans-serif; /* Delicate and feminine font */
+    font-family: 'Arial', sans-serif; 
 }
 
 .container {
@@ -110,43 +110,3 @@ nav ul li a {
     }
 }
 
-/* Footer styles */
-footer {
-    background: transparent;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-/* Twinkling stars animation */
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: #fff;
-    animation: twinkling 2s infinite;
-    opacity: 0.5; /* Stars are initially slightly transparent */
-}
-
-@keyframes twinkling {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/* Adjust star positions */
-.star:nth-child(1) { top: 10%; left: 5%; }
-.star:nth-child(2) { top: 20%; left: 15%; }
-.star:nth-child(3) { top: 30%; left: 25%; }
-.star:nth-child(4) { top: 40%; left: 35%; }
-.star:nth-child(5) { top: 50%; left: 45%; }
-.star:nth-child(6) { top: 60%; left: 55%; }
-.star:nth-child(7) { top: 70%; left: 65%; }
-.star:nth-child(8) { top: 80%; left: 75%; }
-.star:nth-child(9) { top: 90%; left: 85%; }
