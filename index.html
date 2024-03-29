@@ -7,30 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="container">
-            <h1>Your Brand</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="writing.html">Writing</a></li>
-                    <li><a href="baking.html">Baking</a></li>
-                </ul>
-            </nav>
+            <a href="#home" class="logo">Your Brand</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#baking">Baking</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
     
-    <div class="container">
-        <div class="image">
-            <img src="https://github.com/agupta0/PersonalSite/blob/main/profile.JPG?raw=true" alt="Arushi's profile photo">
-        </div>
-        <div class="text">
-            <h2>About Me</h2>
-            <p>Welcome to my personal website! I'm Arushi, a computer science major with a passion for coding, writing, baking, and all things nerdy!</p>
-            <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/arushi-gupta-gatech/">LinkedIn Profile</a></p>
-            <p>Download my resume: <a href="https://github.com/agupta0/PersonalSite/blob/98d100adce42cdec6c296f5d0db94e51ea4a7afb/ARUSHIResume1Fall2023%20copy.pdf" download>Download Resume</a></p>
+    <div id="home" class="section">
+        <div class="container">
+            <div class="image">
+                <img src="https://github.com/agupta0/PersonalSite/blob/main/profile.JPG?raw=true" alt="Arushi's profile photo">
+            </div>
+            <div class="text">
+                <h1>About Me</h1>
+                <p>Welcome to my personal website! I'm Arushi, a computer science major with a passion for coding, writing, baking and all things nerd!</p>
+                <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/arushi-gupta-gatech/">LinkedIn Profile</a></p>
+                <p>Download my resume: <a href="https://github.com/agupta0/PersonalSite/blob/98d100adce42cdec6c296f5d0db94e51ea4a7afb/ARUSHIResume1Fall2023%20copy.pdf" download>Download Resume</a></p>
+            </div>
         </div>
     </div>
+
+    <div id="projects" class="section">
+        <!-- Add your projects content here -->
+    </div>
+
+    <div id="writing" class="section">
+        <!-- Add your writing content here -->
+    </div>
+
+    <div id="baking" class="section">
+        <!-- Add your baking content here -->
+    </div>
+
+    <!-- Add other sections as needed -->
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
