@@ -1,0 +1,47 @@
+.clouds {
+    position: absolute;
+    top: 50%; /* Adjust vertically to position clouds around the photo */
+    left: 50%; /* Adjust horizontally to position clouds around the photo */
+    transform: translate(-50%, -50%);
+}
+
+.cloud {
+    position: absolute;
+    width: 100px; /* Adjust width of the cloud */
+    height: 50px; /* Adjust height of the cloud */
+    background-color: #fff; /* Color of the cloud */
+    border-radius: 50px; /* Adjust border-radius to make the cloud rounder */
+    animation-duration: 10s; /* Adjust animation duration as needed */
+    animation-timing-function: linear; /* Adjust animation timing function as needed */
+    animation-iteration-count: infinite;
+}
+
+.cloud1 {
+    top: -50px; /* Adjust top position of first cloud */
+    left: 100px; /* Adjust left position of first cloud */
+    animation-name: cloudMovement1; /* Specify animation for first cloud */
+}
+
+.cloud2 {
+    top: 100px; /* Adjust top position of second cloud */
+    left: -50px; /* Adjust left position of second cloud */
+    animation-name: cloudMovement2; /* Specify animation for second cloud */
+}
+
+@keyframes cloudMovement1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px); /* Adjust distance the cloud travels horizontally */
+    }
+}
+
+@keyframes cloudMovement2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200px); /* Adjust distance the cloud travels horizontally */
+    }
+}
