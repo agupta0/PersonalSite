@@ -16,12 +16,13 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -38,34 +39,50 @@ nav ul li a {
     text-decoration: none;
 }
 
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-}
-
 .container {
     width: 100%;
-    max-width: 1200px; /* Limit the container width */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px; /* Add some padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
-    flex-direction: row; /* Align content horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
-    flex: 1; /* Occupy one-third of the container */
+    flex: 0 0 40%;
+    max-width: 40%;
 }
 
 .image img {
-    width: 80%; /* Make the image fill the entire container width */
-    max-width: 100%;
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .text {
-    flex: 2; /* Occupy two-thirds of the container */
-    padding-left: 20px; /* Add spacing between image and text */
-    font-size: 16px; /* Adjust the font size as needed */
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 40px;
 }
 
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.text a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text a:hover {
+    color: #555;
+}
