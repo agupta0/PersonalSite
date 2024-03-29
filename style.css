@@ -5,18 +5,22 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
+    background: linear-gradient(to bottom, #a86bf7, #f7a6f3); /* Purple sunset gradient */
     color: #333;
     width: 100%;
     height: 100%;
 }
 
 header {
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -37,6 +41,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Arial', sans-serif; /* Delicate and feminine font */
 }
 
 .container {
@@ -65,16 +70,14 @@ nav ul li a {
     flex: 0 0 60%;
     max-width: 60%;
     padding-left: 40px;
+    text-align: center; /* Center align text */
 }
 
-.text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
+.text h1,
+.text h2,
+.text h3,
 .text p {
-    font-size: 18px;
-    margin-bottom: 15px;
+    opacity: 0; /* Initially hide headings */
 }
 
 .text a {
@@ -85,4 +88,59 @@ nav ul li a {
 
 .text a:hover {
     color: #555;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+/* Fade in effect */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Purple sunset gradient for sections */
+#projects,
+#writing,
+#baking {
+    background: linear-gradient(to bottom, #a86bf7, #f7a6f3);
+    color: #fff;
+}
+
+/* Footer styles */
+footer {
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Twinkling stars animation */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    animation: twinkling 2s infinite;
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

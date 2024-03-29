@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
+    <header>
         <div class="container">
             <a href="#home" class="logo">Your Brand</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#writing">Writing</a></li>
-                <li><a href="#baking">Baking</a></li>
-            </ul>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#writing">Writing</a></li>
+                    <li><a href="#baking">Baking</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
-    
+    </header>
+
     <div id="home" class="section">
         <div class="container">
             <div class="image">
@@ -75,17 +77,10 @@
 
     <!-- Add other sections as needed -->
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    <footer>
+        <!-- Your footer content with twinkling stars animation -->
+    </footer>
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
