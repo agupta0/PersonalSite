@@ -114,3 +114,59 @@ nav ul li a {
     background-color: rgba(0,0,0,.5);
     color: #fff;
   }
+
+  #baking-showcase {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bake-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.bake-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bake-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.bake-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.bake-card p {
+    margin-top: 10px;
+}
+
+.bake-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transit
