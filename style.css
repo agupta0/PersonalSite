@@ -60,10 +60,11 @@ nav ul li a {
 .image {
     flex: 0 0 40%;
     max-width: 40%;
+    text-align: center; /* Center align image */
 }
 
 .image img {
-    width: 100%;
+    width: 70%; /* Adjust image size as needed */
     height: auto;
     border-radius: 50%;
 }
@@ -113,9 +114,9 @@ nav ul li a {
 .box1 {
     background-color: rgba(0,0,0,.5);
     color: #fff;
-  }
+}
 
-  #baking-showcase {
+#baking-showcase {
     text-align: center;
     padding: 50px 0;
 }
