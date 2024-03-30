@@ -6,6 +6,8 @@
     <title>Arushi Gupta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="clouds.css">
+    <!-- Include Typed.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
     <header>
@@ -112,9 +114,19 @@
     <!-- Add other sections as needed -->
 
     <footer>
-        <!-- Your footer content with twinkling stars animation -->
+        <!-- Your footer content -->
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed('#typed', {
+                strings: ["Hello World! This is Arushi Gupta."],
+                typeSpeed: 50,
+                showCursor: false
+            });
+        });
+    </script>
+
 </body>
 </html>
